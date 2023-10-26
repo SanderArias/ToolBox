@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Clima en RD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      Clima en República Dominicana
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Temperatura Actual:</ion-label>
+        <ion-label>{{ clima.main.temp }}°C</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Descripción:</ion-label>
+        <ion-label>{{ clima.weather[0].description }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Humedad:</ion-label>
+        <ion-label>{{ clima.main.humidity }}%</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Viento:</ion-label>
+        <ion-label>{{ clima.wind.speed }} m/s</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

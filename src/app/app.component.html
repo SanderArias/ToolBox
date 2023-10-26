@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['/home']">Home</ion-item>
+        <ion-item [routerLink]="['/predecir-generos']">Predecir Géneros</ion-item>
+        <ion-item [routerLink]="['/predecir-edad']">Predecir Edad</ion-item>
+        <ion-item [routerLink]="['/universidades-por-pais']">Universidades por País</ion-item>
+        <ion-item [routerLink]="['/clima-rd']">Clima en RD</ion-item>
+        <ion-item [routerLink]="['/noticias']">Noticias</ion-item>
+        <ion-item [routerLink]="['/acerca-de']">Acerca de</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

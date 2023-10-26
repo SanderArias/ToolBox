@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Predecir Edad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="predecirEdad()">Predecir Edad</ion-button>
+
+  <div *ngIf="resultado">
+    <h3>Estado:</h3>
+    <h2>{{ resultado.estado }}</h2>
+    <img [src]="resultado.imagen" alt="{{ resultado.estado }}" />
+    <p>Edad: {{ resultado.edad }}</p>
+  </div>
+</ion-content>
